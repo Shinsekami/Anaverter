@@ -1,0 +1,23 @@
+html {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto Condensed';
+    font-weight: 500;
+}
+
+input {
+    width: auto;
+}
+
+div {
+    margin-top: 6vh;
+}
+
+.inches {
+    margin-top: 4vh;
+}
+
+.footstuff, .inchstuff {
+    visibility: hidden;
+}
