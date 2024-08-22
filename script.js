@@ -26,8 +26,8 @@ footInput.oninput = () => {
         footMeters.textContent = '';
         footCentimeters.textContent = '';
     }
-    footMeters.textContent = footInput.value.replace(/\d+/g, (number) => (number / 3.281).toFixed(2));
-    footCentimeters.textContent = footInput.value.replace(/\d+/g, (number) => (number * 30.48).toFixed(2));
+    footMeters.textContent = footInput.value.replace(/\d+(\.\d+)?/g, (number) => (number / 3.281).toFixed(2));
+    footCentimeters.textContent = footInput.value.replace(/\d+(\.\d+)?/g, (number) => (number * 30.48).toFixed(2));
 }
 
 inchInput.oninput = () => {
@@ -42,6 +42,6 @@ inchInput.oninput = () => {
         inchMeters.textContent = '';
         inchCentimeters.textContent = '';
     }
-    inchMeters.textContent = inchInput.value.replace(/\d+/g, (number) => (number / 39.37).toFixed(2));
-    inchCentimeters.textContent = inchInput.value.replace(/\d+/g, (number) => (number * 2.54).toFixed(2));
+    inchMeters.textContent = inchInput.value.replace(/\d+(\.\d+)?/g, (number) => (number / 39.37).toFixed(2));
+    inchCentimeters.textContent = inchInput.value.replace(/\d+(\.\d+)?/g, (number) => (number * 2.54).toFixed(2));
 }
